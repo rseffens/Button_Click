@@ -1,0 +1,89 @@
+/* general formatting */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px solid red; */
+    font-family: sans-serif;
+}
+
+.paddingTop {
+    padding-top: 10px;
+}
+.paddingBottom {
+    padding-bottom: 10px;
+}
+.paddingSides {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.marginTop {
+    margin-top: 10px;
+}
+.fontItalic {
+    font-style: italic;
+}
+/* main page */
+.mainPage {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+/* header */
+.header {
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logIn {
+    background-color:rgb(47, 140, 233);
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    color: white;
+    padding: 5px;  
+    min-width: 60px;
+}
+
+/* main */
+.main{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 2% 0%; 
+    gap: 3%;
+}
+
+/* left container */
+
+.bLike {
+    background-color: rgb(238, 238, 0);
+    padding: 5px;
+}
+
+.bLike::after{
+    content: " Likes";
+    font-weight: bolds;
+}
+    .leftC {
+    flex: 3;
+}
+.borderLeft {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    align-items: center;
+    flex: 3;
+}
+.borderRight{
+    display: flex;
+    border: 1px solid black;
+    padding: 15px;
+    max-height: 75px;
+    flex: 1;
+}
+.addButton {
+    background-color: rgb(35, 175, 35);
+    font: black;
+    box-shadow: 5px 5px;
+    padding: 5px;
+}

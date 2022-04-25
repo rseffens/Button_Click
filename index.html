@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojonary</title>
+</head>
+<body>
+    <!-- full page -->
+    <div class="mainPage">
+        <!-- header -->
+        <div class="header">
+            <h1>Dojonary</h1>
+            <form action="/form/submit" method="get">
+                <input type="search" class="search" placeholder="Search"> 
+            </form>
+            <button class="logIn" onclick="logOut(this)">Login</button>
+        </div>
+
+        <!-- main -->
+        <div class="main paddingTop">
+            <!-- left container -->
+            <div class="leftC">
+                <!-- top container -->
+                <div class="borderLeft">
+                    <!-- left side -->
+                    <div>
+                        <h2 class="paddingBottom">ninja</h2>
+                        <h4 class="paddingBottom fontItalic">noun</h4>
+                        <h6 class="paddingBottom">Plural: 
+                            <span class="fontItalic">
+                            ninjas
+                            </span></h6>
+                            <button onclick="like(this)" class="bLike">13</button>
+                    </div>
+                    <!-- right side -->
+                    <div>
+                        <!-- <span> -->
+                            <p class="paddingSides">
+                                A practitioner skilled in the <br>
+                                <a href="https://www.dictionary.com/browse/japanese">Japanese</a> 
+                                art of 
+                                <a href="https://www.dictionary.com/browse/ninjutsu">ninjutsu</a>
+                            </p>
+                        <!-- </span> -->
+                    </div>
+                </div>
+
+                <!-- bottom container -->
+                <div class="borderLeft marginTop">
+                    <div>
+                        <h2 class="paddingBottom">ninja</h2>
+                        <h4 class="paddingBottom fontItalic">noun</h4>
+                        <h6 class="paddingBottom">Plural: 
+                            <span class="fontItalic">ninjas</span></h6> 
+                        <!-- <button class="bLike" onclick="alert('Ninja was liked')">37 likes</button> -->
+                        <button onclick="like(this)" class="bLike">37</button>
+                    </div>
+                    <!-- right side -->
+                    <div>
+                        <p class="paddingSides">
+                            A <a href="https://www.dictionary.com/browse/practitioner">Practitioner</a> who breaks <br>
+                            down problems with <a href="https://www.dictionary.com/browse/zen">zen</a>-like <br>
+                            focus
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- left container -->
+            <div class="borderRight">
+                <h4 class="paddingBottom">Dojonary is <br>definded by YOU
+                <!-- <button id="my-btn" class="addButton">Add Definition</button> -->
+                <br><br>
+                <button onclick="hide(this); addAlert('Definition was liked')" class="addButton">Add Definition</button></h4>
+            </div>
+        </div>
+    </div>
+    <script src="button.js"></script>
+    
+</body>
+</html>
